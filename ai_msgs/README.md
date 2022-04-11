@@ -28,6 +28,10 @@ message详细说明如下：
 
 感知目标集合。
 
+5、Target[] disappeared_targets
+
+消失目标集合。
+
 ## CaptureTargets.msg
 
 抓拍结果的消息定义。消息包含：
