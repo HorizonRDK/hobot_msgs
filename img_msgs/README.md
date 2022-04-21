@@ -1,10 +1,38 @@
-Getting Started with hbm_img_msgs
+Getting Started with img_msgs
 =======
 
 
 # Intro
 
-hbm_img_msgs package用于 share mem 开发的消息package，用于传输1080P RGB24位 以下分辨率的图片数据 定义的消息结构，数据长度最大为1920*1080*3。NV12 也可以进行传输，读取数据的时候，根据 encoding 和 data_size 去读取。
+img_msgs package用于 h264/h265 开发的消息package，用于传输 h264/h265 帧。
+消息包含：
+1、uint32 index
+
+帧序列号
+
+2、uint8[12] encoding
+
+标识h264/h265
+
+3、uint32 height
+
+图片高
+
+4、uint32 width
+
+图片宽
+
+5、builtin_interfaces/Time dts
+
+解码时间戳
+
+6、builtin_interfaces/Time pts
+
+显示时间戳
+
+7、uint8[] data
+
+帧内容，包含nal 头，00 00 00 01/00 00 01 
 
 # Build
 
@@ -28,7 +56,7 @@ hbm_img_msgs package用于 share mem 开发的消息package，用于传输1080P 
 - 已安装ROS2编译工具colcon。安装的ROS不包含编译工具colcon，需要手动安装colcon。colcon安装命令：`apt update; apt install python3-colcon-common-extensions`
 
 2、编译：
-- `colcon build --packages-select hbm_img_msgs`
+- `colcon build --packages-select img_msgs`
 
 ### docker交叉编译
 
@@ -45,7 +73,7 @@ hbm_img_msgs package用于 share mem 开发的消息package，用于传输1080P 
   export TARGET_TRIPLE=aarch64-linux-gnu
   export CROSS_COMPILE=/usr/bin/$TARGET_TRIPLE-
   
-  colcon build --packages-select hbm_img_msgs \
+  colcon build --packages-select img_msgs \
      --merge-install \
      --cmake-force-configure \
      --cmake-args \
@@ -63,5 +91,5 @@ hbm_img_msgs package用于 share mem 开发的消息package，用于传输1080P 
 export COLCON_CURRENT_PREFIX=./install
 source ./install/local_setup.sh
 // 头文件路径
-#include "hbm_img_msgs/msg/hbm_msg1080_p.hpp"
+#include "img_msgs/msg/h26_x_frame.hpp"
 ```

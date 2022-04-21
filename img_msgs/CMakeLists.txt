@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(hbm_img_msgs)
+project(img_msgs)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -24,8 +24,7 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/HbmMsg1080P.msg"
-  "msg/HbmH26XFrame.msg"
+  "msg/H26XFrame.msg"
   DEPENDENCIES 
     builtin_interfaces
  )
