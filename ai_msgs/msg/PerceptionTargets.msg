@@ -12,3 +12,6 @@ Perf[] perfs
 
 # 感知目标集合
 Target[] targets
+
+# 消失目标集合
+Target[] disappeared_targets
