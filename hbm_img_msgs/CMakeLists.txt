@@ -26,6 +26,8 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HbmMsg1080P.msg"
   "msg/HbmH26XFrame.msg"
+  "msg/HbmMsg540P.msg"
+  "msg/HbmMsg480P.msg"
   DEPENDENCIES 
     builtin_interfaces
  )
