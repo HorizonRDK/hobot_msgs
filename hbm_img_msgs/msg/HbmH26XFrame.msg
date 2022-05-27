@@ -9,6 +9,6 @@ uint8[12] encoding
 uint32 height
 uint32 width
 # 帧内容，包含nal 头，00 00 00 01/00 00 01 
-uint8[256000] data
+uint8[512000] data
 uint32 data_size
-uint32 MAX_SIZE=256000
+uint32 MAX_SIZE=512000
