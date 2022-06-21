@@ -23,3 +23,6 @@ builtin_interfaces/Time stamp_start
 
 # 处理完成的时间戳
 builtin_interfaces/Time stamp_end
+
+# 处理耗时，单位毫秒
+float64 time_ms_duration
