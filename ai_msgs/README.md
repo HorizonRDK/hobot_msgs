@@ -158,6 +158,10 @@ gesture数值定义举例：
 
 关键点数值。
 
+3、float32[] confidence
+
+每个关键点的置信度，维度和关键点数值相同。
+
 ## Capture.msg
 
 抓拍信息。
