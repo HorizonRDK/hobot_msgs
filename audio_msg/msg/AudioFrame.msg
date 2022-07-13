@@ -23,8 +23,8 @@ builtin_interfaces/Time pts
 #  0：unknow frame type  1：normal audio data  2：smart audio frame
 AudioFrameType frame_type
 
-# audio data, if this frame is a normal audio frame, this field is valid
+# audio data, if this frame is a normal audio frame, frame_type value is 1, this field is valid
 uint8[] data
 
-# If this frame is an intelligent audio frame, this field is valid
+# If this frame is an smart audio frame, frame_type value is 2, and this field is valid
 SmartAudioData smart_audio
