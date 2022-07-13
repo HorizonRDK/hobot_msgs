@@ -16,12 +16,12 @@
 
 # smart audio frame type, this parameter's value which can be one of several types, see
 # `SmartAudioFrameType.msg`
-# 0: voip frame data  1：audio event  2：commnad word  3：wake up audio data 4: doa data
+# 1: voip frame data  2：audio event  3：commnad word  4：wake up audio data 5: doa data
 SmartAudioFrameType frame_type
 
 # event type,  , this parameter's value which can be one of several types, see
 # `AudioEventType.msg`
-# 0: normal wakeup  1: one shot wakeup  2：asr detect timeout  3: vad begin  4：vad middle  5：vad end
+# 1: normal wakeup  2: one shot wakeup  3：asr detect timeout  : vad begin  4：vad middle  5：vad end
 AudioEventType event_type
 
 # command word, if this frame is command word data frame, this field is valid

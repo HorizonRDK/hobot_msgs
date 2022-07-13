@@ -14,12 +14,12 @@
 
 # smart audio frame type
 # frame type, uint8  
-#  0：voip data The audio data after noise reduction
-#  1：audio event  2：commnad word  3：wake up audio data 4: doa data
+#  1：voip data The audio data after noise reduction
+#  2：audio event  3：commnad word  4：wake up audio data 5: doa data
 
-uint8 SMART_AUDIO_TYPE_VOIP = 0
-uint8 SMART_AUDIO_TYPE_EVENT = 1
-uint8 SMART_AUDIO_TYPE_CMD_WORD = 2
-uint8 SMART_AUDIO_TYPE_WAKEUP_DATA = 3
-uint8 SMART_AUDIO_TYPE_DOA = 4
+uint8 SMART_AUDIO_TYPE_VOIP = 1
+uint8 SMART_AUDIO_TYPE_EVENT = 2
+uint8 SMART_AUDIO_TYPE_CMD_WORD = 3
+uint8 SMART_AUDIO_TYPE_WAKEUP_DATA = 4
+uint8 SMART_AUDIO_TYPE_DOA = 5
 uint8 value

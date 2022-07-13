@@ -13,12 +13,12 @@
 # limitations under the License.
 
 # smart audio frame event type
-# event type,  0: normal wakeup  1: one shot wakeup  2：asr detect timeout  3: vad begin  4：vad middle  5：vad end
+# event type,  1: normal wakeup  2: one shot wakeup  3：asr detect timeout  4: vad begin  5：vad middle  6：vad end
 
-uint8 EVENT_WKPNORMAL = 0
-uint8 EVENT_WKPONESHOT = 1
-uint8 EVENT_WAITASRTIMEOUT = 2
-uint8 EVENT_VADBEGIN = 3
-uint8 EVENT_VADMID = 4
-uint8 EVENT_VADEND = 5
+uint8 EVENT_WKPNORMAL = 1
+uint8 EVENT_WKPONESHOT = 2
+uint8 EVENT_WAITASRTIMEOUT = 3
+uint8 EVENT_VADBEGIN = 4
+uint8 EVENT_VADMID = 5
+uint8 EVENT_VADEND = 6
 uint8 value
