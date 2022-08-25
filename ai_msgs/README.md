@@ -112,7 +112,7 @@ roi类型，如body/head/face/hand。
 
 属性类型，如年龄：age，性别：gender， 手势：gesture。
 
-2、int16 value
+2、float32 value
 
 属性数值。
 
