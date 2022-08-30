@@ -19,4 +19,4 @@
 string type
 
 # 属性数值
-int16 value
+float32 value
