@@ -104,6 +104,10 @@ roi类型，如body/head/face/hand。
 
 检测框。
 
+3、float32 score
+
+检测结果的置信度。
+
 ## Attribute.msg
 
 属性感知消息，如：年龄、性别、手势、眼镜、口罩、活体信息、车辆类型、车辆颜色、车辆速度、车辆所在车道等信息。
@@ -145,6 +149,10 @@ gesture数值定义举例：
 ​	13: ThumbLeft,  //  大拇指向左
 
 ​	14: Awesome,  //  666手势
+
+3、float32 confidence
+
+属性结果的置信度。
 
 ## Point.msg
 

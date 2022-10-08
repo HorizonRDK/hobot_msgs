@@ -1,5 +1,10 @@
 # Changelog for package ai_msgs
 
+tros_1.1.3 (2022-10-08)
+------------------
+1. roi感知消息Roi.msg中增加用于表示检测结果置信度的成员float32 confidence。
+2. 属性感知消息Attribute.msg中增加用于表示属性结果置信度的成员float32 confidence。
+
 v1.0.6 (2022-08-25)
 ------------------
 1. 属性感知消息Attribute.msg中属性数值value成员类型由int16变更为float32，可用于表示更丰富的属性信息。

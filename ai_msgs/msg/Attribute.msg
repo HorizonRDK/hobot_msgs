@@ -20,3 +20,6 @@ string type
 
 # 属性数值
 float32 value
+
+# 属性结果的置信度
+float32 confidence
