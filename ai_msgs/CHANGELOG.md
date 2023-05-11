@@ -1,5 +1,9 @@
 # Changelog for package ai_msgs
 
+tros_2.0.0 (2023-05-11)
+------------------
+1. 更新package.xml，支持应用独立打包
+
 tros_1.1.2rc1 (2022-10-08)
 ------------------
 1. roi感知消息Roi.msg中增加用于表示检测结果置信度的成员float32 confidence。
